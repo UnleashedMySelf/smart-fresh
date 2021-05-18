@@ -365,7 +365,7 @@ p {
         width: 520px;
         height: 37px;
         border-bottom: 1px solid #E6E6E6;
-        margin: 16px 0 32px;
+        margin: 6px 0 32px;
     }
     input[type=submit] {
         margin-bottom: 0;
@@ -608,6 +608,7 @@ p {
     }
     .dangteliai__left-descr {
         font-size: 14px;
+        padding: 16px 0;
     }
     .order__form-main {
         padding: 32px;
@@ -678,6 +679,7 @@ p {
         }
         .incorrect-tel {
             margin-bottom: 20px;
+            padding-left: 16px;
         }
     }
     .footer {
