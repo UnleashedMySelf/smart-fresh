@@ -426,7 +426,7 @@ p {
     margin: 0 auto;
 }
 .slick-dots {
-    bottom: -12px !important;
+    bottom: -60px !important;
     li button, .slick-dots li {
         width: 10px !important;
         height: 10px !important;
@@ -726,7 +726,9 @@ p {
             max-width: 240px;
         }
     }
-
+    .slick-dots {
+        bottom: -12px !important;
+    }
 }
 
 @media screen and (max-width: 400px) {
