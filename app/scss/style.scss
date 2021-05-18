@@ -121,7 +121,7 @@ p {
 }
 .dangteliai__left {
     max-width: 660px;
-    padding: 163px 0 180px 60px;
+    padding: 163px 0 0 60px;
 }
 .dangteliai__left-descr {
     padding: 32px 0 40px;
@@ -447,12 +447,35 @@ label {
     .try-brand__item, .clients-slider__item, .hto-slide__item {
         padding: 60px 0;
     }
-    .why-smart-fresh__items, .clients-slider, .hto-slider {
-        max-width: 100%;
+    .why-smart-fresh__items, .clients-slider, .hto-slider, .try-brand__items {
+        max-width: 95%;
+        position: relative;
+        /*&::before, &::after {
+            content: '';
+            width: 30px;
+            height: 100%;
+            background: #F9FAFB;
+            filter: blur(5px);
+            position: absolute;
+            top: 0;
+            z-index: 2;
+        }
+        &::after {
+            left: -10px;
+        }
+        &::before {
+            right: -10px;
+        }*/
     }
 }
+@media screen and (max-width: 1400px) {
+    .try-brand__item, .hto-slide__item {
+        height: 280px !important;
+    }
+}
+
 @media screen and (max-width: 1330px) {
-    .order, .dangteliai {
+    .order {
         flex-wrap: wrap;
         flex-direction: column-reverse;
     }
@@ -463,6 +486,35 @@ label {
         padding-left: 0px;
         padding-right: 0px;
     }
+    .size {
+        padding: 0 0 40px;
+    }
+    .size__image-img, .order__image-img {
+        width: 100%;
+        height: 100%;
+    }
+    .size__description {
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        h2 {
+            padding-top: 24px;
+        }
+        p {
+            padding: 16px;
+        }
+    }
+    .size__image-select-img {
+        width: 90%;
+        height: auto;
+        margin-top: 24px;
+    }
+    .order {
+        padding: 0 0 40px;
+    }
+    .order__form {
+        margin: 24px auto 0;
+    }
 }
 /* slic settings */
 
@@ -472,9 +524,164 @@ label {
 }
 
 /* slic settings */
+@media screen and (max-width: 1175px) {
+    .dangteliai {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .dangteliai__right {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .dangteliai__right-img {
+        width: 80%;
+        height: 100%;
+    }
+    .dangteliai__left {
+        padding: 24px 22px 40px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .dangteliai-select-plan {
+        margin: 52px auto 0;
+    }
+}
 
 @media screen and(max-width: 768px) {
     .try-brand__item, .clients-slider__item, .hto-slide__item {
         padding-top: 40px;
     }
 }
+
+@media screen and (max-width: 690px) {
+    h1 {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 140%;
+    }
+    h3 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    h4 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    label {
+        font-size: 15px;
+        line-height: 20px
+    }
+    input {
+        font-size: 14px;
+        line-height: 140%;
+    }
+    .footer {
+        height: 93px;
+        padding: 24px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        p {
+            padding: 0 10px;
+        }
+        .footer-menu {
+            padding: 0 10px;
+        }
+    }
+    .try-brand__items, .why-smart-fresh__items, .clients-slider, .hto-slider {
+        margin-top: 0;
+    }
+    .slick-list {
+        padding-top: 24px !important;
+    }
+    .btn {
+        width: 190px;
+        height: 32px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .dangteliai__left-descr {
+        font-size: 14px;
+    }
+    .order__form-main {
+        padding: 32px;
+    }
+    .order__form {
+        width: calc(100% - 34px);
+        margin: 24px 17px 0;
+    }
+    .order__form-main input {
+        width: 100%;
+    }
+    .btn-plan {
+        width: 140px;
+        height: 117px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+        padding: 10px;
+    }
+    .dangteliai-select-plan {
+        margin-top: 32px;
+    }
+    .try-brand, .why-smart-fresh, .clients, .how-to-order {
+        padding: 40px 0;
+    }
+    .dangteliai {
+        padding-top: 52px;
+    }
+    .dangteliai__left {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .dangteliai-select-plan {
+        justify-content: space-around;
+    }
+    .header {
+        height: 52px;
+        padding: 10px 16px;
+        .logo {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        .btn {
+            width: 140px;
+        }
+    }
+    .clients-slider {
+        max-width: 100%;
+    }
+    .clients-slider__item {
+        padding: 40px 0;
+    }
+    .why-smart-fresh__item {
+        margin-bottom: 45px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .dangteliai-select-plan {
+        justify-content: space-between;
+        max-width: 300px;
+    }
+    .footer {
+        p {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .footer-nav li {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+        }
+        .footer-nav li:nth-child(odd) {
+            padding-right: 8px;
+        }
+        .footer-nav li:nth-child(even) {
+            padding-left: 8px;
+        }
+    }
+}
+
