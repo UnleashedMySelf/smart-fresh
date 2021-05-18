@@ -179,7 +179,7 @@
         </section>
         <section class="order">
             <div class="order__form">
-                <form action="submit" class="order__form-main">
+                <form action="submit" class="order__form-main ">
                     <h3>Užsakymas</h3>
                     <label for="form-name">Jūsų vardas</label>
                     <input type="text" name="form-name" id="form-name" placeholder="Jūsų vardas">
@@ -187,8 +187,20 @@
                     <input type="text" name="form-surname" id="form-surname" placeholder="Pavardė">
                     <label for="form-phone">Telefonas</label>
                     <input type="tel" name="form-phone" id="form-phone" placeholder="Telefonas">
+                    <span class="incorrect-tel">Your number is incorrect</span>
                     <input class="btn" type="submit" value="Palikti užklausą">
                 </form>
+                <div class="order__form-main sucsess hidden">
+                    <img class="order__form-img" src="images/check.png" alt="check">
+                    <h3>Jūsų užsakymas priimtas!</h3>
+                    <p>Netrukus mūsų kosultantas susisieks su jumis</p>
+                </div>
+                <div class="order__form-main error hidden">
+                    <img class="order__form-img" src="images/error.png" alt="error">
+                    <h3>Error</h3>
+                    <p>Netrukus mūsų kosultantas susisieks su jumis</p>
+                    <button class="btn">Try again</button>
+                </div>
             </div>
             <div class="order__image">
                 <img class="order__image-img" src="images/order-img.png" alt="order">
